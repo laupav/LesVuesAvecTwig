@@ -1,0 +1,12 @@
+{
+    "name": "lesvues/twig",
+    "authors": [
+        {
+            "name": "Laurent Colomb",
+            "email": "l.colomb@laposte.net"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.12"
+    }
+}
