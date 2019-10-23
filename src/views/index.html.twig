@@ -1,16 +1,20 @@
-{% block title %}Grafikart.fr Tuto PHP/Twig : Moteur de template Twig{% endblock %}
-</br>
+{% extends "base.html.twig" %}
+
+ {% block title %}Grafikart.fr Tuto PHP/Twig : Moteur de template Twig{% endblock %}
 
 {% block content %}
+
+    <br>
+
+
     <div class="row">
         {% for product in products %}
 
-            <div class="card" style="width: 16rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">{{ product }}</li>
-                </ul>
-            </div>
-
-        {% endfor %}
+        <div class="card" style="width: 16rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{ product }}</li>
+            </ul>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
